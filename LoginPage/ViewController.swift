@@ -64,7 +64,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         button.setTitleColor(UIColor.white, for: .normal)
         button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 16)
         button.translatesAutoresizingMaskIntoConstraints = false
-        button.layer.cornerRadius = 10
+        button.layer.cornerRadius = 15
         button.layer.masksToBounds = true
         return button
     }()

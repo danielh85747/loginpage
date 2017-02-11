@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		852306A51E4F7F8800C89AB1 /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852306A41E4F7F8800C89AB1 /* ProfileController.swift */; };
+		852306A71E4FBA8900C89AB1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 852306A61E4FBA8900C89AB1 /* GoogleService-Info.plist */; };
 		852B91AA1E47D98700AA3D4E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852B91A91E47D98700AA3D4E /* AppDelegate.swift */; };
 		852B91AC1E47D98700AA3D4E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852B91AB1E47D98700AA3D4E /* ViewController.swift */; };
 		852B91AF1E47D98800AA3D4E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 852B91AD1E47D98800AA3D4E /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 
 /* Begin PBXFileReference section */
 		852306A41E4F7F8800C89AB1 /* ProfileController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
+		852306A61E4FBA8900C89AB1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		852B91A61E47D98700AA3D4E /* LoginPage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginPage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		852B91A91E47D98700AA3D4E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		852B91AB1E47D98700AA3D4E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				852B91B01E47D98900AA3D4E /* Assets.xcassets */,
 				852B91B21E47D98900AA3D4E /* LaunchScreen.storyboard */,
 				852B91B51E47D98900AA3D4E /* Info.plist */,
+				852306A61E4FBA8900C89AB1 /* GoogleService-Info.plist */,
 			);
 			path = LoginPage;
 			sourceTree = "<group>";
@@ -127,6 +130,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				852B91B41E47D98900AA3D4E /* LaunchScreen.storyboard in Resources */,
+				852306A71E4FBA8900C89AB1 /* GoogleService-Info.plist in Resources */,
 				852B91B11E47D98900AA3D4E /* Assets.xcassets in Resources */,
 				852B91AF1E47D98800AA3D4E /* Main.storyboard in Resources */,
 			);
