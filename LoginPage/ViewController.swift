@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class ViewController: UIViewController, UITextFieldDelegate {
     
@@ -66,8 +67,44 @@ class ViewController: UIViewController, UITextFieldDelegate {
         button.translatesAutoresizingMaskIntoConstraints = false
         button.layer.cornerRadius = 15
         button.layer.masksToBounds = true
+        button.addTarget(self, action: #selector(handleRegister), for: .touchUpInside)
         return button
     }()
+    
+    func handleRegister() {
+        guard let email = emailText.text, let pass = passText.text, let name = nameText.text else {
+            print("Invalid Form")
+            return
+        }
+        
+        FIRAuth.auth()?.createUser(withEmail: email, password: pass, completion: { (user: FIRUser?, error) in
+            
+            if error != nil {
+                print(error!)
+                return
+            }
+            
+            guard let uid = user?.uid else {
+                return
+            }
+            
+            //Successfully authenticated user
+            let ref = FIRDatabase.database().reference(fromURL: "https://firstapp-cdc72.firebaseio.com/")
+            let userRef = ref.child("users").child(uid)
+            let values = ["name": name, "email": email, "password": pass]
+            userRef.updateChildValues(values, withCompletionBlock: { (err, ref) in
+                
+                if err != nil {
+                    print(err!)
+                    return
+                }
+                
+                print("User successfuly savled into database")
+                
+            })
+            
+        })
+    }
     
 
     override func viewDidLoad() {
@@ -86,7 +123,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         
         boxView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         boxView.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
-        boxView.widthAnchor.constraint(equalTo: view.widthAnchor, constant: 12).isActive = true
+        boxView.widthAnchor.constraint(equalTo: view.widthAnchor, constant: -12).isActive = true
         boxView.heightAnchor.constraint(equalToConstant: 120).isActive = true
         
         boxView.addSubview(nameText)
