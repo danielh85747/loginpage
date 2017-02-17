@@ -8,19 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		39343180ADBAC365931EE6AC /* Pods_LoginPage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E3E4651051C1384C8E094D9 /* Pods_LoginPage.framework */; };
-		852306A51E4F7F8800C89AB1 /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852306A41E4F7F8800C89AB1 /* ProfileController.swift */; };
 		852306A71E4FBA8900C89AB1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 852306A61E4FBA8900C89AB1 /* GoogleService-Info.plist */; };
 		852B91AA1E47D98700AA3D4E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852B91A91E47D98700AA3D4E /* AppDelegate.swift */; };
 		852B91AC1E47D98700AA3D4E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852B91AB1E47D98700AA3D4E /* ViewController.swift */; };
 		852B91AF1E47D98800AA3D4E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 852B91AD1E47D98800AA3D4E /* Main.storyboard */; };
 		852B91B11E47D98900AA3D4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 852B91B01E47D98900AA3D4E /* Assets.xcassets */; };
 		852B91B41E47D98900AA3D4E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 852B91B21E47D98900AA3D4E /* LaunchScreen.storyboard */; };
+		859F57501E5620E0001A45D6 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859F574F1E5620E0001A45D6 /* LoginController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0E3E4651051C1384C8E094D9 /* Pods_LoginPage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoginPage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AC6AAAAA156C84A457DF64E /* Pods-LoginPage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginPage.release.xcconfig"; path = "Pods/Target Support Files/Pods-LoginPage/Pods-LoginPage.release.xcconfig"; sourceTree = "<group>"; };
-		852306A41E4F7F8800C89AB1 /* ProfileController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
 		852306A61E4FBA8900C89AB1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		852B91A61E47D98700AA3D4E /* LoginPage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginPage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		852B91A91E47D98700AA3D4E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -29,6 +28,7 @@
 		852B91B01E47D98900AA3D4E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		852B91B31E47D98900AA3D4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		852B91B51E47D98900AA3D4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		859F574F1E5620E0001A45D6 /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		90497633A3E93ED946CD0822 /* Pods-LoginPage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginPage.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LoginPage/Pods-LoginPage.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -84,7 +84,7 @@
 			children = (
 				852B91A91E47D98700AA3D4E /* AppDelegate.swift */,
 				852B91AB1E47D98700AA3D4E /* ViewController.swift */,
-				852306A41E4F7F8800C89AB1 /* ProfileController.swift */,
+				859F574F1E5620E0001A45D6 /* LoginController.swift */,
 				852B91AD1E47D98800AA3D4E /* Main.storyboard */,
 				852B91B01E47D98900AA3D4E /* Assets.xcassets */,
 				852B91B21E47D98900AA3D4E /* LaunchScreen.storyboard */,
@@ -219,8 +219,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				852B91AC1E47D98700AA3D4E /* ViewController.swift in Sources */,
+				859F57501E5620E0001A45D6 /* LoginController.swift in Sources */,
 				852B91AA1E47D98700AA3D4E /* AppDelegate.swift in Sources */,
-				852306A51E4F7F8800C89AB1 /* ProfileController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
